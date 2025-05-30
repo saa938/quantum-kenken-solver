@@ -2,6 +2,13 @@
 
 **We are running this on Qiskit v0.43**
 
+Go to Anaconda Powershell and run these commands to install necessary libraries
+```
+conda create -n qiskit043 python=3.9
+conda activate qiskit043
+pip install qiskit==0.43
+```
+
 ---
 
 ## **Ken Ken**
