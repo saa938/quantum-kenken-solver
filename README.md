@@ -33,7 +33,7 @@ Grover's algorithm is a **quantum search algorithm** that finds a specific item 
 
 ## **Time Complexity**
 
-A classical solution could be trying out all possible combinations and checking if they work, resulting in **O(N^(N²))** time complexity. However, since we use Grover's algorithm there is a **quadratic speedup**, and our new time complexity is **O(√(N^(N²)))**.
+A classical solution could be trying out all possible combinations and checking if they work, resulting in **O(N!^(N)*(N²))** time complexity. However, since we use Grover's algorithm there is a **quadratic speedup**, and our new time complexity is **O(√(N!^(N)*(N²)))**.
 
 ---
 
@@ -171,4 +171,4 @@ This amplifies the probability of correct states.
 ## **Limitations**
 
 We don't have enough memory to run the Grover loop multiple times.  
-If we could, our code would be **more accurate**.
+If we could, our code would be **more accurate**. Right now, because we have one iteration of Grover's algorithm, and since we have 16 states, the probability of getting the correct state is 47%. To make it get 95-99 percent accuracy, we would have to have at least 3 Grover iterations for a 2x2 Ken Ken. A possible solution is to create more short cuts for addition and multiplication as well abusing the fact that the Ken Ken is 2x2.
